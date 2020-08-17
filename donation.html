@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+  <title>一起为古赖国文化园建设助力</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/donation.css">
+  <script src="./js/jquery-2.2.1.min.js"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="wenben">
+      <span class="wenbenMain">
+      </span>
+    </div>
+    <div class="downloadIcon">
+      <div class="icon">
+        <img src="./image/share_app_logo.png" alt="">
+      </div>
+      <div class="iconName">
+        <h2>赖氏风采</h2>
+        <span>古赖国研究院官方平台</span>
+      </div>
+      <div class="iconBtn">
+        <a href="">
+        <div class="btnText">打开APP</div>
+        <div class="btnIcon">
+        <img src="./image/app_netx_icon_b.png" alt="">
+        </div>
+      </a>
+      </div>
+  </div>
+  </div>
+</body>
+<script>
+  // var url="www.********.com/redict?activityId=14";
+  // var list1=url.split("?")[1].split("&");
+  // var object={};
+  // for(var i=0;i<list1.length;i++){
+  //   var list2=list1[i].split("=");
+  //   object[list2[0]]=list2[1];
+  // }
+  // var keyWord=object.keyWord;
+  $.ajax({
+    type: "post",
+    url: "http://47.107.81.81:177/laishitoutiao/api/content1/get",
+    data: {
+      id:15
+    },
+    dataType: "json",
+    success: function (res) {
+      if(res.code==1){
+        $(".wenbenMain").html(res.data.content);
+      }else{
+        console.log("获取数据失败");
+      }
+    }
+  });
+  if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
+        var url="";
+        // ios
+        $(".iconBtn a").attr("href","www.baidu.com");
+        
+      } else if (navigator.userAgent.match(/android/i)) {
+        //android
+        $(".iconBtn a").attr("href","http://d.firim.top/8td3");
+      }
+</script>
+</html>

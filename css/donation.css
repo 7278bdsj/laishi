@@ -1,0 +1,102 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+html .main,
+body .main {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  position: relative;
+}
+html .main .wenben,
+body .main .wenben {
+  width: 100%;
+  padding-left: 6.9333vw;
+  padding-top: 6.2667vw;
+  padding-right: 8.2667vw;
+  font-size: 3.4667vw;
+  font-family: OPPOSans;
+  font-weight: 400;
+  color: #2d2d2d;
+  line-height: 5.6vw;
+  box-sizing: border-box;
+}
+html .main .downloadIcon,
+body .main .downloadIcon {
+  width: 94.8vw;
+  height: 14.6667vw;
+  background: #ffffff;
+  box-shadow: 0px 0.2667vw 5.8667vw 0.9333vw rgba(64, 64, 64, 0.1);
+  border-radius: 2.6667vw;
+  position: fixed;
+  bottom: 2.6667vw;
+  left: 2.6667vw;
+}
+html .main .downloadIcon .icon,
+body .main .downloadIcon .icon {
+  width: 10.6667vw;
+  height: 10.6667vw;
+  float: left;
+  margin-top: 2vw;
+  margin-left: 2vw;
+}
+html .main .downloadIcon .icon img,
+body .main .downloadIcon .icon img {
+  width: 100%;
+  height: 100%;
+}
+html .main .downloadIcon .iconName,
+body .main .downloadIcon .iconName {
+  width: 38.6667vw;
+  height: 100%;
+  float: left;
+  margin-left: 6vw;
+  padding-top: 3.4667vw;
+  box-sizing: border-box;
+}
+html .main .downloadIcon .iconName h2,
+body .main .downloadIcon .iconName h2 {
+  color: #333333;
+  font-size: 3.2vw;
+  font-family: OPPOSans;
+  font-weight: bold;
+}
+html .main .downloadIcon .iconName span,
+body .main .downloadIcon .iconName span {
+  color: #999999;
+  font-size: 2.6667vw;
+  font-family: OPPOSans;
+  font-weight: normal;
+  margin-top: 0.6667vw;
+  display: inline-block;
+}
+html .main .downloadIcon .iconBtn,
+body .main .downloadIcon .iconBtn {
+  width: 19vw;
+  height: 4vw;
+  float: right;
+  margin-top: 5.3333vw;
+  margin-right: 6vw;
+}
+html .main .downloadIcon .iconBtn .btnText,
+body .main .downloadIcon .iconBtn .btnText {
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #1fa1eb;
+  float: left;
+}
+html .main .downloadIcon .iconBtn .btnIcon,
+body .main .downloadIcon .iconBtn .btnIcon {
+  width: 3.6vw;
+  height: 3.6vw;
+  float: left;
+  margin-top: 1vw;
+}
+html .main .downloadIcon .iconBtn .btnIcon img,
+body .main .downloadIcon .iconBtn .btnIcon img {
+  width: 100%;
+  height: 100%;
+}

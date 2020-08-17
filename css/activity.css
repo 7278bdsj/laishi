@@ -1,0 +1,254 @@
+body .main,
+html .main {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .main .poster,
+html .main .poster {
+  width: 93.6vw;
+  height: 51.2vw;
+  margin-top: 2.6667vw;
+  border-radius: 2.1333vw;
+}
+body .main .poster .postMain,
+html .main .poster .postMain {
+  width: 93.6vw;
+  height: 37.6vw;
+  background-color: #14be14;
+  border-radius: 2.1333vw 2.1333vw 0vw 0vw;
+}
+body .main .poster .postMain img,
+html .main .poster .postMain img {
+  width: 100%;
+  height: 100%;
+}
+body .main .poster .posterTitle,
+html .main .poster .posterTitle {
+  width: 100%;
+  font-size: 4vw;
+  font-family: OPPOSans;
+  font-weight: 400;
+  color: #000000;
+  padding-left: 4.4vw;
+  padding-top: 3.3333vw;
+  padding-right: 12.1333vw;
+  padding-bottom: 2.6667vw;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 0px 0px 2.1333vw 2.1333vw;
+  box-shadow: 0px 0px 20px 0px rgba(46, 51, 56, 0.15);
+}
+body .main .ancestor,
+html .main .ancestor {
+  width: 100%;
+  height: 80.3333vw;
+  background-color: white;
+  margin-top: 5.0667vw;
+}
+body .main .ancestor ul,
+html .main .ancestor ul {
+  width: 100%;
+  height: 100%;
+  padding-top: 3.3333vw;
+  padding-bottom: 3.3333vw;
+}
+body .main .ancestor ul li,
+html .main .ancestor ul li {
+  width: 100%;
+  height: 10.9333vw;
+  display: block;
+  padding-top: 2.8vw;
+  padding-left: 6.5333vw;
+  padding-bottom: 2.8vw;
+  padding-right: 7.4667vw;
+  box-sizing: border-box;
+}
+body .main .ancestor ul li .ancIcon,
+html .main .ancestor ul li .ancIcon {
+  width: 4.5333vw;
+  height: 4.5333vw;
+  float: left;
+}
+body .main .ancestor ul li .ancIcon img,
+html .main .ancestor ul li .ancIcon img {
+  width: 100%;
+  height: 100%;
+}
+body .main .ancestor ul li .ancTitle,
+html .main .ancestor ul li .ancTitle {
+  height: 4vw;
+  float: left;
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 400;
+  color: #666666;
+  margin-left: 2.6667vw;
+}
+body .main .ancestor ul li .ancText,
+html .main .ancestor ul li .ancText {
+  height: 4vw;
+  float: right;
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #333333;
+}
+body .main .ancestor ul .liBg,
+html .main .ancestor ul .liBg {
+  width: 100%;
+  height: 0.8vw;
+  background-image: url("../image/even_bar_icon.png");
+}
+body .main .details,
+html .main .details {
+  width: 100%;
+  height: 59.0667vw;
+  background-color: white;
+  margin-top: 2.6667vw;
+}
+body .main .details .detTitle,
+html .main .details .detTitle {
+  width: 21.3333vw;
+  height: 4vw;
+  margin-top: 5.6vw;
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 400;
+  color: #000000;
+  margin-left: 37.2vw;
+  text-align: center;
+}
+body .main .details .detTitle .leftIcon,
+html .main .details .detTitle .leftIcon {
+  width: 2.4vw;
+  height: 0.8vw;
+  float: left;
+  margin-top: 2vw;
+}
+body .main .details .detTitle .leftIcon img,
+html .main .details .detTitle .leftIcon img {
+  width: 100%;
+  height: 100%;
+}
+body .main .details .detTitle .rightIcon,
+html .main .details .detTitle .rightIcon {
+  width: 2.4vw;
+  height: 0.8vw;
+  float: right;
+  margin-top: 2vw;
+}
+body .main .details .detTitle .rightIcon img,
+html .main .details .detTitle .rightIcon img {
+  width: 100%;
+  height: 100%;
+}
+body .main .details .detContent,
+html .main .details .detContent {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-left: 5.6vw;
+  padding-top: 4.6667vw;
+  padding-right: 5.6vw;
+  padding-bottom: 8.2667vw;
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 400;
+  color: #000000;
+  box-sizing: border-box;
+}
+body .main .details .btn,
+html .main .details .btn {
+  width: 69.3333vw;
+  height: 10.4vw;
+  background: #e6e6e6;
+  border-radius: 5.2vw;
+  color: #999999;
+  font-size: 4.2667vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  text-align: center;
+  line-height: 10.4vw;
+  margin-left: 14vw;
+}
+body .main .downloadIcon,
+html .main .downloadIcon {
+  width: 94.8vw;
+  height: 14.6667vw;
+  background: #ffffff;
+  box-shadow: 0px 0.2667vw 5.8667vw 0.9333vw rgba(64, 64, 64, 0.1);
+  border-radius: 2.6667vw;
+  position: fixed;
+  bottom: 2.6667vw;
+  left: 2.6667vw;
+}
+body .main .downloadIcon .icon,
+html .main .downloadIcon .icon {
+  width: 10.6667vw;
+  height: 10.6667vw;
+  float: left;
+  margin-top: 2vw;
+  margin-left: 2vw;
+}
+body .main .downloadIcon .icon img,
+html .main .downloadIcon .icon img {
+  width: 100%;
+  height: 100%;
+}
+body .main .downloadIcon .iconName,
+html .main .downloadIcon .iconName {
+  width: 38.6667vw;
+  height: 100%;
+  float: left;
+  margin-left: 6vw;
+  padding-top: 3.4667vw;
+  box-sizing: border-box;
+}
+body .main .downloadIcon .iconName h2,
+html .main .downloadIcon .iconName h2 {
+  color: #333333;
+  font-size: 3.2vw;
+  font-family: OPPOSans;
+  font-weight: bold;
+}
+body .main .downloadIcon .iconName span,
+html .main .downloadIcon .iconName span {
+  color: #999999;
+  font-size: 2.6667vw;
+  font-family: OPPOSans;
+  font-weight: normal;
+  margin-top: 0.6667vw;
+  display: inline-block;
+}
+body .main .downloadIcon .iconBtn,
+html .main .downloadIcon .iconBtn {
+  width: 19vw;
+  height: 4vw;
+  float: right;
+  margin-top: 5.3333vw;
+  margin-right: 6vw;
+}
+body .main .downloadIcon .iconBtn .btnText,
+html .main .downloadIcon .iconBtn .btnText {
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #1fa1eb;
+  float: left;
+}
+body .main .downloadIcon .iconBtn .btnIcon,
+html .main .downloadIcon .iconBtn .btnIcon {
+  width: 3.6vw;
+  height: 3.6vw;
+  float: left;
+  margin-top: 1vw;
+}
+body .main .downloadIcon .iconBtn .btnIcon img,
+html .main .downloadIcon .iconBtn .btnIcon img {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+html .main,
+body .main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html .main .map_bg,
+body .main .map_bg {
+  width: 100%;
+  height: 44.2667vw;
+  background-image: url("../image/shar_map_pitc.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 16.2667vw;
+}
+html .main .share_logo,
+body .main .share_logo {
+  width: 14.1333vw;
+  height: 14.1333vw;
+  margin-top: 8.2667vw;
+}
+html .main .share_logo img,
+body .main .share_logo img {
+  width: 100%;
+  height: 100%;
+}
+html .main .share_name,
+body .main .share_name {
+  width: 20.2667vw;
+  height: 5.3333vw;
+  margin-top: 2.2667vw;
+}
+html .main .share_name img,
+body .main .share_name img {
+  width: 100%;
+  height: 100%;
+}
+html .main .share_title,
+body .main .share_title {
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 300;
+  color: #666666;
+  margin-top: 5.4667vw;
+}
+html .main .shore_btn,
+body .main .shore_btn {
+  width: 69.3333vw;
+  height: 10.4vw;
+  background: #3396fb;
+  border-radius: 2.1333vw;
+  text-align: center;
+  line-height: 10.4vw;
+  font-size: 4.2667vw;
+  font-family: OPPOSans;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 33.8667vw;
+}
+html .main .shore_btn a,
+body .main .shore_btn a {
+  font-size: 4.2667vw;
+  font-family: OPPOSans;
+  font-weight: 400;
+  color: #ffffff;
+}

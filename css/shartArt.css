@@ -1,0 +1,451 @@
+html .main,
+body .main {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html .main .swiper-container,
+body .main .swiper-container {
+  width: 100%;
+  height: 8vw;
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 400;
+  color: #de2416;
+  text-align: center;
+  line-height: 8vw;
+  position: relative;
+}
+html .main .swiper-container .swiper-wrapper,
+body .main .swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+html .main .swiper-container .swiper-wrapper .swiper-slide,
+body .main .swiper-container .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+html .main .swiper-container .swiper-wrapper .swiper-slide img,
+body .main .swiper-container .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+html .main .top,
+body .main .top {
+  width: 100%;
+  height: 21.0667vw;
+  background-color: #f8f8f8;
+  background-image: url("../image/comm_app_bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1.7333vw;
+}
+html .main .top .logo,
+body .main .top .logo {
+  width: 10.6667vw;
+  height: 10.6667vw;
+  float: left;
+  margin-top: 5.2vw;
+  margin-left: 4.5333vw;
+}
+html .main .top .logo img,
+body .main .top .logo img {
+  width: 100%;
+  height: 100%;
+}
+html .main .top .appMessage,
+body .main .top .appMessage {
+  width: 48.1333vw;
+  height: 100%;
+  float: left;
+  padding-left: 6vw;
+}
+html .main .top .appMessage h2,
+body .main .top .appMessage h2 {
+  font-size: 3.2vw;
+  font-family: OPPOSans;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 6.6667vw;
+}
+html .main .top .appMessage span,
+body .main .top .appMessage span {
+  font-size: 2.6667vw;
+  font-family: OPPOSans;
+  font-weight: bold;
+  color: #999999;
+  line-height: 5.0667vw;
+}
+html .main .top .downLoadBtn,
+body .main .top .downLoadBtn {
+  width: 22vw;
+  height: 6vw;
+  float: right;
+  margin-right: 8.1333vw;
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #1fa1eb;
+  padding-top: 8.6667vw;
+}
+html .main .top .downLoadBtn a,
+body .main .top .downLoadBtn a {
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #1fa1eb;
+}
+html .main .top .downLoadBtn a span,
+body .main .top .downLoadBtn a span {
+  display: block;
+  float: left;
+}
+html .main .top .downLoadBtn a img,
+body .main .top .downLoadBtn a img {
+  float: left;
+}
+html .main .mainTitle,
+body .main .mainTitle {
+  width: 82.1333vw;
+  font-size: 5.3333vw;
+  font-family: OPPOSans;
+  font-weight: bold;
+  color: #2d2d2d;
+  line-height: 6.6667vw;
+  margin-top: 1.6vw;
+}
+html .main .titleArt,
+body .main .titleArt {
+  width: 92vw;
+  height: 9.3333vw;
+  border-bottom: 1px solid #EEEEEE;
+}
+html .main .titleArt .titName,
+body .main .titleArt .titName {
+  display: block;
+  float: left;
+  font-size: 2.6667vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #f2822f;
+  margin-top: 3.6vw;
+  margin-left: 4vw;
+}
+html .main .titleArt .titTime,
+body .main .titleArt .titTime {
+  display: block;
+  float: right;
+  font-size: 2.6667vw;
+  font-family: OPPOSans;
+  font-weight: 400;
+  color: #cccccc;
+  margin-top: 3.6vw;
+  margin-right: 0.2667vw;
+}
+html .main .articleMain,
+body .main .articleMain {
+  width: 100%;
+  height: auto;
+  min-height: 90.3333vw;
+  overflow: hidden;
+  font-size: 3.4667vw;
+  font-family: OPPOSans;
+  font-weight: 400;
+  color: #333333;
+  line-height: 5.2vw;
+  box-sizing: border-box;
+  padding-left: 5.6vw;
+  padding-top: 4.6667vw;
+  padding-right: 5.6vw;
+  padding-bottom: 8.2667vw;
+}
+html .main .articleImg,
+body .main .articleImg {
+  width: 100%;
+  height: auto;
+}
+html .main .articleImg img,
+body .main .articleImg img {
+  width: 100%;
+  height: 100%;
+}
+html .main .comment,
+body .main .comment {
+  width: 100%;
+  margin-top: 7.4667vw;
+  box-shadow: 0px 0px 13px 0px rgba(46, 51, 56, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+html .main .comment .commitTop,
+body .main .comment .commitTop {
+  width: 92vw;
+  height: 16.6667vw;
+  border-bottom: 1px solid #EEEEEE;
+  font-size: 4.2667vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #333333;
+  padding-top: 7.6vw;
+  padding-left: 2.5333vw;
+  box-sizing: border-box;
+}
+html .main .comment .commitStart,
+body .main .comment .commitStart {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+html .main .comment .commitStart .commitMain,
+body .main .comment .commitStart .commitMain {
+  width: 100%;
+  padding-bottom: 5.2vw;
+  float: left;
+}
+html .main .comment .commitStart .commitMain .commitAva,
+body .main .comment .commitStart .commitMain .commitAva {
+  width: 100%;
+  float: left;
+}
+html .main .comment .commitStart .commitMain .commitAva .headIcon,
+body .main .comment .commitStart .commitMain .commitAva .headIcon {
+  width: 8.9333vw;
+  height: 8.9333vw;
+  border-radius: 50%;
+  margin-top: 6.4vw;
+  margin-left: 6.5333vw;
+  float: left;
+}
+html .main .comment .commitStart .commitMain .commitAva .headIcon img,
+body .main .comment .commitStart .commitMain .commitAva .headIcon img {
+  width: 100%;
+  height: 100%;
+}
+html .main .comment .commitStart .commitMain .commitAva .commitIntro,
+body .main .comment .commitStart .commitMain .commitAva .commitIntro {
+  width: auto;
+  height: 8.9333vw;
+  float: left;
+  margin-top: 6.4vw;
+  margin-left: 3.3333vw;
+}
+html .main .comment .commitStart .commitMain .commitAva .commitIntro h3,
+body .main .comment .commitStart .commitMain .commitAva .commitIntro h3 {
+  font-size: 3.2vw;
+  font-family: OPPOSans;
+  font-weight: 400;
+  color: #666666;
+  margin-top: 1.7333vw;
+}
+html .main .comment .commitStart .commitMain .commitAva .commitIntro span,
+body .main .comment .commitStart .commitMain .commitAva .commitIntro span {
+  font-size: 2.4vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #cccccc;
+}
+html .main .comment .commitStart .commitMain .commitAva .commitLike,
+body .main .comment .commitStart .commitMain .commitAva .commitLike {
+  width: 20vw;
+  height: 8.9333vw;
+  margin-top: 6.4vw;
+  float: right;
+}
+html .main .comment .commitStart .commitMain .commitAva .commitLike .lickIcon,
+body .main .comment .commitStart .commitMain .commitAva .commitLike .lickIcon {
+  width: 4.6667vw;
+  height: 4.6667vw;
+  margin-right: 8.2667vw;
+  background-image: url("../image/deta_like_icon_nor.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+}
+html .main .comment .commitStart .commitMain .commitAva .commitLike .likeNum,
+body .main .comment .commitStart .commitMain .commitAva .commitLike .likeNum {
+  display: block;
+  float: right;
+  margin-right: 2.8vw;
+  margin-top: 1vw;
+  color: #cccccc;
+}
+html .main .comment .commitStart .commitMain .commitart,
+body .main .comment .commitStart .commitMain .commitart {
+  width: 100%;
+  float: left;
+}
+html .main .comment .commitStart .commitMain .commitart .commitContent,
+body .main .comment .commitStart .commitMain .commitart .commitContent {
+  width: 100%;
+  padding-left: 18.6667vw;
+  padding-right: 4.2667vw;
+  box-sizing: border-box;
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #333333;
+  margin-top: 5.2vw;
+}
+html .main .comment .commitStart .commitMain .commitart .huifu,
+body .main .comment .commitStart .commitMain .commitart .huifu {
+  width: 70.5333vw;
+  height: auto;
+  border: 1px solid transparent;
+  padding-left: 3.3333vw;
+  padding-right: 3.3333vw;
+  background-color: #f9f9f9;
+  margin-top: 4.4vw;
+  margin-left: 18.4vw;
+  padding-bottom: 2.5333vw;
+}
+html .main .comment .commitStart .commitMain .commitart .huifu ul,
+body .main .comment .commitStart .commitMain .commitart .huifu ul {
+  width: 100%;
+  height: 100%;
+}
+html .main .comment .commitStart .commitMain .commitart .huifu ul li,
+body .main .comment .commitStart .commitMain .commitart .huifu ul li {
+  display: block;
+  margin-right: 4vw;
+  margin-top: 4.2667vw;
+  width: 72vw;
+  height: auto;
+}
+html .main .comment .commitStart .commitMain .commitart .huifu ul li .username,
+body .main .comment .commitStart .commitMain .commitart .huifu ul li .username {
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #1fa1eb;
+}
+html .main .comment .commitStart .commitMain .commitart .huifu ul li .hf,
+body .main .comment .commitStart .commitMain .commitart .huifu ul li .hf {
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #666666;
+}
+html .main .comment .commitStart .commitMain .commitart .huifu ul li .byUsername,
+body .main .comment .commitStart .commitMain .commitart .huifu ul li .byUsername {
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #1fa1eb;
+}
+html .main .comment .commitStart .commitMain .commitart .huifu ul li .huifuContent,
+body .main .comment .commitStart .commitMain .commitart .huifu ul li .huifuContent {
+  font-size: 3.7333vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #666666;
+}
+html .main .comment .commitStart .commitMain .commitart .commitdelete,
+body .main .comment .commitStart .commitMain .commitart .commitdelete {
+  width: 80vw;
+  height: 11.2vw;
+  margin-left: 16vw;
+  border-bottom: 1px solid #eeeeee;
+  float: left;
+  margin-top: 4.9333vw;
+}
+html .main .comment .commitStart .commitMain .commitart .commitdelete span,
+body .main .comment .commitStart .commitMain .commitart .commitdelete span {
+  display: block;
+  float: right;
+  font-size: 3.2vw;
+  font-family: OPPOSans;
+  font-weight: 400;
+  color: #cccccc;
+  margin-right: 5.3333vw;
+}
+html .main .comment .btnApp,
+body .main .comment .btnApp {
+  width: 100%;
+  height: 14.6667vw;
+  position: relative;
+  font-size: 4vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #3ab8ff;
+  text-align: center;
+  line-height: 14.6667vw;
+  background-image: url("../image/comm_shad_whit.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 500;
+  position: absolute;
+  bottom: 13.1333vw;
+  left: 0vw;
+}
+html .main .comment .btnApp a,
+body .main .comment .btnApp a {
+  font-size: 4vw;
+  font-family: OPPOSans;
+  font-weight: 500;
+  color: #3ab8ff;
+}
+html .main .comment .commitRelease,
+body .main .comment .commitRelease {
+  width: 100%;
+  height: 13.0667vw;
+  box-shadow: 0px 0px 13px 0px rgba(46, 51, 56, 0.2);
+}
+html .main .comment .commitRelease .commitInput,
+body .main .comment .commitRelease .commitInput {
+  width: 50.6667vw;
+  height: 9.3333vw;
+  border: 1px solid #CCCCCC;
+  border-radius: 2.6667vw;
+  float: left;
+  margin-left: 5.4667vw;
+  margin-top: 1.8667vw;
+  font-size: 3.4667vw;
+  font-family: OPPOSans;
+  font-weight: 400;
+  color: #cccccc;
+  box-sizing: border-box;
+  padding-top: 2.4vw;
+  padding-left: 6vw;
+}
+html .main .comment .commitRelease .like,
+body .main .comment .commitRelease .like {
+  width: 10vw;
+  height: 100%;
+  float: right;
+  margin-right: 17.3333vw;
+}
+html .main .comment .commitRelease .like .likeIcon,
+body .main .comment .commitRelease .like .likeIcon {
+  width: 5.3333vw;
+  height: 5.3333vw;
+  background-image: url("../image/deta_like_icon_nor.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 2.4vw;
+  margin-left: 0.9333vw;
+}
+html .main .comment .commitRelease .like .likeNum,
+body .main .comment .commitRelease .like .likeNum {
+  font-size: 1.8667vw;
+  font-family: OPPOSans;
+  font-weight: 800;
+  color: #cccccc;
+  margin-top: 1vw;
+  text-align: center;
+  margin-left: -2.6667vw;
+}

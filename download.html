@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <title>赖氏风采</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/download.css">
+  <script src="./js/jquery-2.2.1.min.js"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="map_bg"></div>
+    <div class="share_logo">
+      <img src="./image/share_app_logo.png" alt="">
+    </div>
+    <div class="share_name">
+      <img src="./image/share_app_name.png" alt="">
+    </div>
+    <span class="share_title">
+      连接全球宗亲的纽带
+    </span>
+    <div class="shore_btn"><a href="">立即下载安装</a></div>
+  </div>
+</body>
+<script>
+  //匹配不同设备的下载
+  var download = $('.shore_btn');
+  download.on("click", function () {
+      // if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
+      //   var url="";
+      //   // ios
+      //   $.ajax({
+      //     type: "POST",
+      //     url: "http://xjy.5gzvip.idcfengye.com/laishitoutiao/api/app/version/getNewIos",
+      //     dataType: "json",
+      //     success: function (res) {
+      //       url=res.data.url
+      //       window.location.href = url;
+      //     }
+      //   });
+      // } else if (navigator.userAgent.match(/android/i)) {
+      //   var url="";
+      //   // android
+      //   $.ajax({
+      //     type: "POST",
+      //     url: "http://xjy.5gzvip.idcfengye.com/laishitoutiao/api/app/version/getNewAndroid",
+      //     dataType: "json",
+      //     success: function (res) {
+      //       url=res.data.url
+      //       window.location.href = url;
+      //     }
+      //   });
+      // }
+    });
+    if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
+        var url="";
+        // ios
+        $(".shore_btn a").attr("href","www.baidu.com");
+        
+      } else if (navigator.userAgent.match(/android/i)) {
+        //android
+        $(".shore_btn a").attr("href","http://d.firim.top/8td3");
+      }
+</script>
+</html>
