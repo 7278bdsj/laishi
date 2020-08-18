@@ -148,7 +148,7 @@
 </body>
 <script>
   var url=window.location.href;
-  // var url="www.********.com/redict?id=62";
+  // var url="www.********.com/redict?id=48";
   var list1=url.split("?")[1].split("&");
   var object={};
   for(var i=0;i<list1.length;i++){
@@ -168,10 +168,12 @@
     success: function (res) {
       if(res.code==1){
         var data=res.data;
+        var regex = new RegExp('<img', 'gi');
+        txt = data.text.replace(regex, '<img style="width: 100%; height:auto"');
         $(".mainTitle").text(data.articletitle);
         $(".titName").text(data.name);
         $(".titTime").text(data.createTime);
-        $(".articleMain").html(data.text);
+        $(".articleMain").html(txt);
         $(".articleImg img").attr("src","https://laishifengcai.oss-cn-shenzhen.aliyuncs.com"+data.coverimg)
         $(".airLike").text(data.zanNum)
       }else{

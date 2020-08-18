@@ -50,8 +50,11 @@
     },
     dataType: "json",
     success: function (res) {
+      var data=res.data;
+      var regex = new RegExp('<img', 'gi');
+        txt = data.content.replace(regex, '<img style="width: 100%; height:auto"');
       if(res.code==1){
-        $(".wenbenMain").html(res.data.content);
+        $(".wenbenMain").html(txt);
       }else{
         console.log("获取数据失败");
       }

@@ -130,6 +130,8 @@
     success: function (res) {
       if(res.code==1){
         var data=res.data;
+        var regex = new RegExp('<img', 'gi');
+        txt = data.activitycontent.replace(regex, '<img style="width: 100%; height:auto"');
         $(".postMain img").attr("src","https://laishifengcai.oss-cn-shenzhen.aliyuncs.com"+data.activityimg);
         $(".posterTitle").text(data.activitytitle);
         $(".place").text(data.activityaddrs);
@@ -138,7 +140,7 @@
         $(".name").text(data.activityPersonncharge);
         $(".phone").text(data.activitymobile);
         $(".endTime").text(data.activityendTime);
-        $(".detContent").html(data.activitycontent);
+        $(".detContent").html(txt);
         $('.personNum span').text(data.applyNum);
       }else{
         alert("数据获取失败");
