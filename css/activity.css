@@ -165,9 +165,9 @@ body .main .details .btn,
 html .main .details .btn {
   width: 69.3333vw;
   height: 10.4vw;
-  background: #e6e6e6;
+  background: linear-gradient(0deg, #f13939 0%, #ff4949 100%);
   border-radius: 5.2vw;
-  color: #999999;
+  color: white;
   font-size: 4.2667vw;
   font-family: OPPOSans;
   font-weight: 500;
@@ -227,10 +227,12 @@ html .main .downloadIcon .iconName span {
 body .main .downloadIcon .iconBtn,
 html .main .downloadIcon .iconBtn {
   width: 19vw;
-  height: 4vw;
+  height: 100%;
   float: right;
-  margin-top: 5.3333vw;
   margin-right: 6vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 body .main .downloadIcon .iconBtn .btnText,
 html .main .downloadIcon .iconBtn .btnText {
@@ -238,12 +240,14 @@ html .main .downloadIcon .iconBtn .btnText {
   font-family: OPPOSans;
   font-weight: 500;
   color: #1fa1eb;
-  float: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 body .main .downloadIcon .iconBtn .btnIcon,
 html .main .downloadIcon .iconBtn .btnIcon {
-  width: 3.6vw;
-  height: 3.6vw;
+  width: 4vw;
+  height: 4vw;
   float: left;
   margin-top: 1vw;
 }

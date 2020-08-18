@@ -76,26 +76,22 @@ html,body{
       }
       .downLoadBtn{
         width: 22vw;
-        height: 6vw;
+        height: 100%;
         float: right;
         margin-right: 8.1333vw;
         font-size: 3.7333vw;
         font-family:OPPOSans;
         font-weight:500;
         color:rgba(31,161,235,1);
-        padding-top: 8.6667vw;
-        a{
-          font-size: 3.7333vw;
-          font-family:OPPOSans;
-          font-weight:500;
-          color:rgba(31,161,235,1);
-          span{
-            display: block;
-            float: left;
-          }
-          img{
-            float: left;
-          }
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        span{
+          display: block;
+        }
+        img{
+          width: 4vw;
+          height: 4vw;
         }
       }
     }
@@ -342,12 +338,6 @@ html,body{
         position: absolute;
         bottom: 13.1333vw;
         left: 0vw;
-        a{
-          font-size: 4vw;
-          font-family:OPPOSans;
-          font-weight:500;
-          color:rgba(58,184,255,1);
-        }
       }
       .commitRelease{
         width: 100%;

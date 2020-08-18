@@ -89,30 +89,25 @@ body .main .top .appMessage span {
 html .main .top .downLoadBtn,
 body .main .top .downLoadBtn {
   width: 22vw;
-  height: 6vw;
+  height: 100%;
   float: right;
   margin-right: 8.1333vw;
   font-size: 3.7333vw;
   font-family: OPPOSans;
   font-weight: 500;
   color: #1fa1eb;
-  padding-top: 8.6667vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-html .main .top .downLoadBtn a,
-body .main .top .downLoadBtn a {
-  font-size: 3.7333vw;
-  font-family: OPPOSans;
-  font-weight: 500;
-  color: #1fa1eb;
-}
-html .main .top .downLoadBtn a span,
-body .main .top .downLoadBtn a span {
+html .main .top .downLoadBtn span,
+body .main .top .downLoadBtn span {
   display: block;
-  float: left;
 }
-html .main .top .downLoadBtn a img,
-body .main .top .downLoadBtn a img {
-  float: left;
+html .main .top .downLoadBtn img,
+body .main .top .downLoadBtn img {
+  width: 4vw;
+  height: 4vw;
 }
 html .main .mainTitle,
 body .main .mainTitle {
@@ -390,13 +385,6 @@ body .main .comment .btnApp {
   position: absolute;
   bottom: 13.1333vw;
   left: 0vw;
-}
-html .main .comment .btnApp a,
-body .main .comment .btnApp a {
-  font-size: 4vw;
-  font-family: OPPOSans;
-  font-weight: 500;
-  color: #3ab8ff;
 }
 html .main .comment .commitRelease,
 body .main .comment .commitRelease {

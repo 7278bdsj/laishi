@@ -97,13 +97,11 @@
           <h2>赖氏风采</h2>
           <span>古赖国研究院官方平台</span>
         </div>
-        <div class="iconBtn">
-          <a href="">
+        <div class="iconBtn" id="downloadButton">
           <div class="btnText">打开APP</div>
           <div class="btnIcon">
             <img src="./image/app_netx_icon_b.png" alt="">
           </div>
-        </a>
         </div>
     </div>
   </div>
@@ -157,5 +155,46 @@
         //android
         $(".iconBtn a").attr("href","http://d.firim.top/8td3");
       }
+</script>
+<!-- openinstall集成 -->
+<script type="text/javascript" charset="UTF-8" src="https://web.cdn.openinstall.io/openinstall.js"></script>
+<script type="text/javascript">
+    //OpenInstall初始化时将与OpenInstall服务器交互，应尽可能早的调用
+    /*web页面向app传递的json数据(json string/js Object)，应用被拉起或是首次安装时，通过相应的android/ios api可以获取此数据*/
+    var data = OpenInstall.parseUrlParams();///openinstall.js中提供的工具函数，解析url中的所有查询参数
+    new OpenInstall({
+        /*appKey必选参数，OpenInstall平台为每个应用分配的ID*/
+        appKey : "xit2up",
+        /*可选参数，自定义android平台的apk下载文件名；个别andriod浏览器下载时，中文文件名显示乱码，请慎用中文文件名！*/
+        //apkFileName : 'com.example-v2.2.0.apk',
+        /*可选参数，是否优先考虑拉起app，以牺牲下载体验为代价*/
+        // preferWakeup:true,
+        /*自定义遮罩的html*/
+        //mask:function(){
+        //  return "<div id='_shadow' style='position:fixed;left:0;top:0;background:rgba(0,255,0,0.5);filter:alpha(opacity=50);width:100%;height:100%;z-index:10000;'></div>"
+        //},
+        /*OpenInstall初始化完成的回调函数，可选*/
+        onready : function() {
+            /*在app已安装的情况尝试拉起app*/
+            // this.downloadButton;
+            
+            /*用户点击某个按钮时(假定按钮id为downloadButton)，安装app*/
+            var m = this, button = document.getElementById("downloadButton");
+            button.style.visibility = "visible";
+            button.onclick = function() {
+              //先尝试拉起app再安装
+                m.downloadButton;
+                m.wakeupOrInstall();
+                return false;
+            }
+            $(".btn").on("click",function(){
+                m.downloadButton;
+                m.wakeupOrInstall();
+                return false;
+            })
+        }
+    }, data);
+
+</script>
 </script>
 </html>
