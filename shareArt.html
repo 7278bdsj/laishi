@@ -6,16 +6,16 @@
   <title>文章详情</title>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/shartArt.css">
-  <link rel="stylesheet" href="./css/swiper-3.4.2.min.css">
+  <!-- <link rel="stylesheet" href="./css/swiper-3.4.2.min.css"> -->
   <script src="./js/jquery-2.2.1.min.js"></script>
-  <script src="./js/swiper-3.4.2.jquery.min.js"></script>
+  <!-- <script src="./js/swiper-3.4.2.jquery.min.js"></script> -->
 </head>
 <body>
   <div class="main">
+    <div class="swiper-img"></div>
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="./image/caro_shade_bar.png" alt="">
       <!-- 轮播公告轮播公告轮播公告轮播公告轮播公告轮播公告 -->
         </div>
       </div>
@@ -136,17 +136,10 @@
       </div>
     </div>
   </div>
-  <script>
-    var mySwiper = new Swiper('.swiper-container', {
-        autoplay: 3000,//可选选项，自动滑动
-        speed:300,
-        loop : true
-      })
-  </script>
 </body>
 <script>
   var url=window.location.href;
-  // var url="www.********.com/redict?id=48";
+  // var url="www.********.com/redict?id=62";
   var list1=url.split("?")[1].split("&");
   var object={};
   for(var i=0;i<list1.length;i++){
@@ -218,20 +211,23 @@
     success: function (res) {
       var notice=res.data.content;
       $('.swiper-slide').html(notice);
+
+      //进行轮播
+      // 1.获取轮播内容的宽度
+      var $p=$(".swiper-slide p");
+      var Width=$(".swiper-slide p").outerWidth();
+      var offsetLeft=$(".swiper-slide p").offset().left;
+      console.log(Width,offsetLeft);
+      var timer=setInterval(function(){
+        offsetLeft=offsetLeft-1
+        $p.offset({left:offsetLeft});
+        if(-offsetLeft>Width){
+          offsetLeft=375;
+        }
+      },15)
     }
   });
 
-  if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
-        var url="";
-        // ios
-        $(".downLoadBtn a").attr("href","www.baidu.com");
-        $(".btnApp a").attr("href","www.baidu.com");
-        
-      } else if (navigator.userAgent.match(/android/i)) {
-        //android
-        $(".downLoadBtn a").attr("href","http://d.firim.top/8td3");
-        $(".btnApp a").attr("href","http://d.firim.top/8td3");
-      }
 </script>
 <script type="text/javascript" charset="UTF-8" src="https://web.cdn.openinstall.io/openinstall.js"></script>
 <script type="text/javascript">
@@ -259,13 +255,13 @@
             button.style.visibility = "visible";
             button.onclick = function() {
               //先尝试拉起app再安装
-                m.downloadButton();
+                m.downloadButton;
                 m.wakeupOrInstall();
                 return false;
             }
             $(".btnApp").onclick=function(){
               //先尝试拉起app再安装
-                m.downloadButton();
+                m.downloadButton;
                 m.wakeupOrInstall();
                 return false;
             }

@@ -7,37 +7,49 @@ body .main {
   flex-direction: column;
   align-items: center;
 }
+html .main .swiper-img,
+body .main .swiper-img {
+  width: 100%;
+  height: 9vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../image/caro_shade_bar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1000;
+}
 html .main .swiper-container,
 body .main .swiper-container {
   width: 100%;
-  height: 8vw;
+  height: 9vw;
   font-size: 3.7333vw;
   font-family: OPPOSans;
   font-weight: 400;
   color: #de2416;
-  text-align: center;
-  line-height: 8vw;
-  position: relative;
+  float: left;
 }
 html .main .swiper-container .swiper-wrapper,
 body .main .swiper-container .swiper-wrapper {
   width: 100%;
   height: 100%;
+  position: relative;
+  overflow: auto;
 }
 html .main .swiper-container .swiper-wrapper .swiper-slide,
 body .main .swiper-container .swiper-wrapper .swiper-slide {
   width: 100%;
   height: 100%;
-  position: relative;
+  display: inline-block;
   overflow: hidden;
 }
-html .main .swiper-container .swiper-wrapper .swiper-slide img,
-body .main .swiper-container .swiper-wrapper .swiper-slide img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+html .main .swiper-container .swiper-wrapper .swiper-slide p,
+body .main .swiper-container .swiper-wrapper .swiper-slide p {
+  width: auto;
+  margin-top: 3vw;
+  display: inline-block;
+  white-space: nowrap;
 }
 html .main .top,
 body .main .top {
