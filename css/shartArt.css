@@ -393,7 +393,7 @@ body .main .comment .btnApp {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: 500;
+  z-index: 800;
   position: absolute;
   bottom: 13.1333vw;
   left: 0vw;

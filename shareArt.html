@@ -259,12 +259,12 @@
                 m.wakeupOrInstall();
                 return false;
             }
-            $(".btnApp").onclick=function(){
+            $(".btnApp").on("click",function(){
               //先尝试拉起app再安装
                 m.downloadButton;
                 m.wakeupOrInstall();
                 return false;
-            }
+            })
         }
     }, data);
 
