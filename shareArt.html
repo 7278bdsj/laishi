@@ -228,12 +228,14 @@
     }
   });
 
+  // window.location.href=url+"&type=2";
 </script>
 <script type="text/javascript" charset="UTF-8" src="https://web.cdn.openinstall.io/openinstall.js"></script>
 <script type="text/javascript">
     //OpenInstall初始化时将与OpenInstall服务器交互，应尽可能早的调用
     /*web页面向app传递的json数据(json string/js Object)，应用被拉起或是首次安装时，通过相应的android/ios api可以获取此数据*/
     var data = OpenInstall.parseUrlParams();///openinstall.js中提供的工具函数，解析url中的所有查询参数
+    // console.log(data);
     new OpenInstall({
         /*appKey必选参数，OpenInstall平台为每个应用分配的ID*/
         appKey : "xit2up",
@@ -248,20 +250,20 @@
         /*OpenInstall初始化完成的回调函数，可选*/
         onready : function() {
             /*在app已安装的情况尝试拉起app*/
-            // this.downloadButton;
+            // this.schemeWakeup();
             
             /*用户点击某个按钮时(假定按钮id为downloadButton)，安装app*/
             var m = this, button = document.getElementById("downloadButton");
             button.style.visibility = "visible";
             button.onclick = function() {
               //先尝试拉起app再安装
-                m.downloadButton;
+                m.schemeWakeup();
                 m.wakeupOrInstall();
                 return false;
             }
             $(".btnApp").on("click",function(){
               //先尝试拉起app再安装
-                m.downloadButton;
+                m.schemeWakeup();
                 m.wakeupOrInstall();
                 return false;
             })

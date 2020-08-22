@@ -99,14 +99,13 @@
         /*OpenInstall初始化完成的回调函数，可选*/
         onready : function() {
             /*在app已安装的情况尝试拉起app*/
-            // this.downloadButton;
+            // this.schemeWakeup();
             
             /*用户点击某个按钮时(假定按钮id为downloadButton)，安装app*/
             var m = this, button = document.getElementById("downloadButton");
             button.style.visibility = "visible";
             button.onclick = function() {
               //先尝试拉起app再安装
-                // m.downloadButton();
                 m.wakeupOrInstall();
                 return false;
             }

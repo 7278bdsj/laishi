@@ -205,13 +205,13 @@ html .main .downloadIcon .iconName {
   height: 100%;
   float: left;
   margin-left: 6vw;
-  padding-top: 3.4667vw;
+  padding-top: 1.4667vw;
   box-sizing: border-box;
 }
 body .main .downloadIcon .iconName h2,
 html .main .downloadIcon .iconName h2 {
   color: #333333;
-  font-size: 3.2vw;
+  font-size: 4.7vw;
   font-family: OPPOSans;
   font-weight: bold;
 }
